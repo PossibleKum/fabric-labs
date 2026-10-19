@@ -1,0 +1,16 @@
+{
+  "name": "supplychain-api",
+  "version": "1.0.0",
+  "description": "REST gateway for the Supply Chain Fabric chaincode",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check enrollUsers.js",
+    "enroll": "node enrollUsers.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "fabric-ca-client": "^2.2.20",
+    "fabric-network": "^2.2.20"
+  }
+}

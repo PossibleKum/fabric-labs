@@ -1,0 +1,17 @@
+{
+  "name": "supplychain-chaincode",
+  "version": "1.0.0",
+  "description": "Supply chain tracking chaincode for Hyperledger Fabric",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "fabric-chaincode-node start",
+    "check": "node --check index.js && node --check lib/supplychain.js"
+  },
+  "dependencies": {
+    "fabric-contract-api": "^2.5.4",
+    "fabric-shim": "^2.5.4"
+  }
+}
