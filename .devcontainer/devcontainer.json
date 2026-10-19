@@ -1,0 +1,9 @@
+{
+  "name": "Fabric Labs (Exp 8 and 9)",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": { "cpus": 4 },
+  "postCreateCommand": "chmod +x scripts/*.sh"
+}
